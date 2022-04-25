@@ -1,0 +1,15 @@
+[
+    {
+        "nombre": "Main",
+        "redirect": "main"
+    },
+    {
+        "nombre": "About",
+        "redirect": "about"
+    },
+    {
+        "nombre": "Contact",
+        "redirect": "contact"
+    }
+
+]

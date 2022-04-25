@@ -1,0 +1,10 @@
+
+<mat-toolbar >
+    <span>Stage Two</span>
+    <span class="example-spacer"></span>
+    <button mat-button [routerLink]="item.redirect" *ngFor="let item of menu">{{item.redirect | titlecase}}</button>
+    <span class="example-spacer"></span>
+    <span>Lean Tech</span>
+
+
+</mat-toolbar>
