@@ -1,0 +1,33 @@
+
+  <form class="example-form" [formGroup]="editCardJournal">
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Add Title</mat-label>
+      <input
+        matInput
+        placeholder="Title"
+        value="Title"
+        formControlName="title"
+      />
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Add Journal</mat-label>
+      <input
+        matInput
+        placeholder="Journal"
+        value="Journal"
+        formControlName="journal"
+      />
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Abstract Text</mat-label>
+      <textarea
+        matInput
+        placeholder="textarea..."
+        formControlName="textarea"
+      ></textarea>
+    </mat-form-field>
+
+    <button mat-button color="primary" >Registration</button>
+  </form>
