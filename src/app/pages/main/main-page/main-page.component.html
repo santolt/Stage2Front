@@ -1,23 +1,5 @@
-<div class="registration container">
-  <form class="example-form" [formGroup]="registrationFormGroup">
-    <mat-form-field class="example-full-width" appearance="outline">
-      <mat-label>Add Title</mat-label>
-      <input matInput placeholder="Ex. Pizza" value="Title" formControlName= "title"/>
-    </mat-form-field>
 
-    <mat-form-field class="example-full-width" appearance="outline">
-      <mat-label>Add Journal</mat-label>
-      <input matInput placeholder="Ex. Pizza" value="Journal" formControlName= "journal"/>
-    </mat-form-field>
-
-    <mat-form-field class="example-full-width" appearance="outline">
-      <mat-label>Abstract Text</mat-label>
-      <textarea matInput placeholder="Ex. It makes me feel..." formControlName= "textarea"></textarea>
-    </mat-form-field>
-
-    <button mat-button color="primary" (click)="save()">Registration</button>
-  </form>
-</div>
+<app-form></app-form>
 
 <div class="main-container container-grid">
   <mat-card class="example-card" *ngFor="let item of journal">

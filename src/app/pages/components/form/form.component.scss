@@ -1,3 +1,16 @@
+.registration{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    border: 1px solid rgb(123, 122, 122);
+    border-radius: 1rem;
+
+    button{
+      background-color: rgb(8, 88, 164);
+      color: #fff;
+    }
+}
 
 mat-card {
 
@@ -27,8 +40,6 @@ mat-card {
 
   }
 }
-
-
 
 .container-grid{
   display: grid;

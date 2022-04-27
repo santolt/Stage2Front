@@ -5,20 +5,19 @@ import { MainRoutingModule } from './main-routing.module';
 import { MainPageComponent } from './main-page/main-page.component';
 import { MaterialModule } from '../../shared/material/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { JournalCardComponent } from '../components/journal-card/journal-card.component';
+import { ComponentsModule } from '../components/components.module';
 
 
 @NgModule({
   declarations: [
-  
     MainPageComponent,
-    JournalCardComponent
   ],
   imports: [
     CommonModule,
     MainRoutingModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ComponentsModule
   ]
 })
 export class MainModule { }
