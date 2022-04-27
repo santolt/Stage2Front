@@ -10,6 +10,4 @@ export class JournalCardComponent  {
 
   @Input() journal: Journal | undefined;
 
-
-
 }
