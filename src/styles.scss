@@ -1,23 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { 
-    height: 100%; 
+html,
+body {
+  height: 100%;
 }
-body { 
-    margin: 0; 
-    font-family: 'Roboto Slab', serif;
- }
-
-.container{
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 4rem;
+body {
+  margin: 0;
+  font-family: "Roboto Slab", serif;
 }
 
-.main-container{
+.container {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
 
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 4rem;
-    height: 100vh;
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 4rem;
+  height: 100vh;
 }

@@ -1,11 +1,4 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import {
-  AbstractControl,
-  FormBuilder,
-  FormControl,
-  FormGroup,
-  Validators,
-} from '@angular/forms';
 import { AppiService } from '../../../services/appi.service';
 import { Doc } from '../../../interfaces/journal.interfaces';
 import { Subscription } from 'rxjs';
