@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuService } from '../../../services/menu.service';
-import { Menu } from '../../../interfaces/menu';
+import { Menu } from '../../../interfaces/menu.interfaces';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +10,7 @@ import { Menu } from '../../../interfaces/menu';
 
 export class HeaderComponent implements OnInit {
 
-  menu: Menu[] = []
+  menu: Menu[] = [];
 
   constructor(private menuService: MenuService) { }
 

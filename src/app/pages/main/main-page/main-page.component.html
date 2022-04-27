@@ -1,1 +1,54 @@
-<p>main-page works!</p>
+<div class="registration container">
+  <form class="example-form" [formGroup]="registrationFormGroup">
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Add Title</mat-label>
+      <input matInput placeholder="Ex. Pizza" value="Title" formControlName= "title"/>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Add Journal</mat-label>
+      <input matInput placeholder="Ex. Pizza" value="Journal" formControlName= "journal"/>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Abstract Text</mat-label>
+      <textarea matInput placeholder="Ex. It makes me feel..." formControlName= "textarea"></textarea>
+    </mat-form-field>
+
+    <button mat-button color="primary" (click)="save()">Registration</button>
+  </form>
+</div>
+
+<div class="main-container container-grid">
+  <mat-card class="example-card" *ngFor="let item of journal">
+    <mat-card-header>
+      <div class="example-header-image"></div>
+      <mat-card-title>{{ item.title_display | titlecase }}</mat-card-title>
+      <mat-card-subtitle>{{ item.journal }}</mat-card-subtitle>
+    </mat-card-header>
+    <img
+      mat-card-image
+      [src]="
+        (item.journal | uppercase )=== 'PLOS ONE'
+          ? JOURNAL_IMAGES.FOUND
+          : JOURNAL_IMAGES.NOFOUND
+      "
+      alt="Photo of a Shiba Inu"
+    />
+    <mat-card-content>
+      {{ item.abstract }}
+    </mat-card-content>
+    <mat-card-actions>
+      <button class="button-edit" mat-button color="primary">Primary</button>
+      <button class="button-accent" mat-button color="accent">Show Abstract</button>
+      <button class="button-cancel" mat-button color="warn">Cancel</button>
+
+    </mat-card-actions>
+  </mat-card>
+
+  <!-- <ul>
+    <li *ngFor="let item of journal">
+      {{item.response.docs}}
+    </li>
+  </ul> -->
+</div>
