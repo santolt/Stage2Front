@@ -8,7 +8,6 @@ import {
 } from '@angular/forms';
 import { AppiService } from '../../../services/appi.service';
 import { Doc } from '../../../interfaces/journal.interfaces';
-import { JOURNAL_IMAGES } from 'src/app/shared/constants/constants';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -18,7 +17,6 @@ import { Subscription } from 'rxjs';
 })
 export class MainPageComponent implements OnInit, OnDestroy {
   journal: Doc[] = [];
-  JOURNAL_IMAGES = JOURNAL_IMAGES;
   apiSubcription: Subscription | undefined;
   registrationFormGroup!: FormGroup;
 
