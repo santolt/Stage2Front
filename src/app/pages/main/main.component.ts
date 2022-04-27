@@ -1,14 +1,14 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { AppiService } from '../../../services/appi.service';
-import { Doc } from '../../../interfaces/journal.interfaces';
+import { AppiService } from '../../services/appi.service';
+import { Doc } from '../../interfaces/journal.interfaces';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-main-page',
-  templateUrl: './main-page.component.html',
-  styleUrls: ['./main-page.component.scss'],
+  selector: 'app-main',
+  templateUrl: './main.component.html',
+  styleUrls: ['./main.component.scss'],
 })
-export class MainPageComponent implements OnInit, OnDestroy {
+export class MainComponent implements OnInit, OnDestroy {
   journal: Doc[] = [];
   apiSubcription: Subscription | undefined;
 
